@@ -1,0 +1,186 @@
+:root{
+    --clr-primary-500: hsl(3, 77%, 44%);
+    --clr-primary-300: hsl(3, 71%, 56%);
+    --clr-primary-100: hsl(3, 86%, 64%);
+    --clr-neutral-100: hsl(200, 60%, 99%);
+    --clr-neutral-200: hsl(0, 0%, 93%);
+    --clr-neutral-300: hsl(217, 61%, 90%);
+    --clr-neutral-400: hsl(0, 0%, 78%);
+    --clr-neutral-500: hsl(226, 11%, 37%);
+    --clr-neutral-600: hsl(225, 23%, 24%);
+    --clr-neutral-700: hsl(226, 25%, 17%);
+    --clr-neutral-800: hsl(227, 75%, 14%);
+    --clr-gradient-500: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+    --clr-gradient-100: linear-gradient(180deg, #040918 0%, #091540 100%);
+    --fs-body: 1rem;
+    --ff-body: "Noto Sans", sans-serif;
+    --fw-light: 400;
+    --fw-bold: 500;
+    --fw-bolder: 700;
+    --text-header: 2.1875rem;
+    --text-semi-header: 1.875rem;
+}
+
+/*General Styling*/
+body{
+    font-size: var(--ff-body);
+    font-family: var(--ff-body);
+    background-color: var(--clr-neutral-300);
+}
+
+.text-header{
+    font-size: var(--text-header);
+}
+
+.text-semi-header{
+    font-size: var(--text-semi-header);
+}
+
+.mt-1{
+  margin-top: 1rem;
+}
+
+.mt-2{
+  margin-top: 1.5rem;
+}
+
+.mt-3{
+  margin-top: 2rem;
+}
+
+.mb-2{
+  margin-bottom: 2rem;
+}
+
+/*CSS Reset*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+    }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--clr-neutral-100);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+  
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+  background-color: var(--clr-primary-300);
+}
+  
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--clr-primary-300);
+}
+  
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+  
+.slider.round:before {
+  border-radius: 50%;
+}

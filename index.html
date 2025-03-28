@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style.css">
+  <title>Browser extensions manager UI</title>
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <img src="./assets/images/logo.svg" alt="logo">
+      <div class="mode-togle">
+        <img src="./assets/images/icon-moon.svg" alt="toggle-dark-mode">
+      </div>
+    </div>
+  </header>
+  <main>
+      <div class="interactivity">
+        <h1 class="text-header">Extensions List</h1>
+        <div class="iteractive-btns">
+          <button class="button">All</button>
+          <button class="button">Active</button>
+          <button class="button">Inactive</button>
+        </div>
+      </div>
+      <div class="extensions">
+        <div class="extension-card">
+          <div>
+            <img src="./assets/images/logo-devlens.svg" alt="dev lens">
+            <div>
+              <p class="text-semi-header">DevLens</p>
+              <p>Quickly inspect page layouts and visualize element boundaries</p>
+            </div>
+          </div>
+          <div>
+            <button>Remove</button>
+            <label class="switch">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+  </main>
+</body>
+</html>
