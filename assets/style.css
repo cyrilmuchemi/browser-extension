@@ -227,6 +227,7 @@ input:checked + .slider:before {
 .card-top{
   display: flex;
   gap: 1rem;
+  padding-top: 1rem;
 }
 
 .removeBtn{
@@ -268,8 +269,19 @@ input:checked + .slider:before {
   align-items: center;
 }
 
+.iteractive-btns{
+  list-style: none;
+  display: flex;
+}
+
 .extensions{
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
+  gap: 1rem;
+}
+
+.active{
+  border: 2px solid var(--clr-primary-300);
 }
 
 @media(max-width:55em){
@@ -279,30 +291,13 @@ input:checked + .slider:before {
     margin: auto;
     padding-inline: 1rem;
   }
-
-  .extensions{
-    display: grid;
-    justify-content: center;
-  }
-
-  .extensions{
-    display: grid;
-    justify-content: center;
-    padding-bottom: 1.875rem;
-  }
 }
 
-@media(min-width:55em){
+@media(min-width:65.63em){
   .container{
     max-width: 1200px;
     margin: auto;
     padding-inline: 1rem;
     padding-bottom: 3rem;
-  }
-
-  .extensions{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 1rem;
   }
 }
