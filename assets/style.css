@@ -283,7 +283,7 @@ input:checked + .slider:before {
   align-items: center;
 }
 
-.iteractive-btns{
+.interactive-btns{
   list-style: none;
   display: flex;
 }
