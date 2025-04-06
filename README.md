@@ -30,7 +30,7 @@ For more information on the importance of a professional README for your reposit
 
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="preview.jpg" alt="preview" width="200"  height="auto" />
+  <img src="preview.jpg" alt="preview" width="500"  height="auto" />
   <br/>
 
   <h3><b>Browser Extensions</b></h3>
